@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Amazon Self Advertising Skipper",
+  "version": "1.0",
+  "description": "Automatically skips self-advertising of Amazon",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.amazon.com/gp/video/*",
+        "*://*.amazon.co.uk/gp/video/*",
+        "*://*.amazon.de/gp/video/*",
+        "*://*.amazon.co.jp/gp/video/*",
+        "*://*.amazon.fr/gp/video/*",
+        "*://*.amazon.ca/gp/video/*",
+        "*://*.amazon.it/gp/video/*",
+        "*://*.amazon.es/gp/video/*",
+        "*://*.amazon.in/gp/video/*",
+        "*://*.amazon.mx/gp/video/*"
+      ],
+      "js": [
+        "amazonAdsFixer.js"
+      ]
+    }
+  ]
+}
